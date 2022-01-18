@@ -16,3 +16,23 @@ Guided project **DB II** Module.
 - [ ] type `npm run server` to start the API.
 
 Please follow along as the instructor explores schema design with this API.
+
+## Used CLI 
+
+```
+npx knex init
+
+npx knex migrate:make table-fruits
+
+npx knex migrate:up
+
+npx knex migrate:make delicious-col-fruits
+
+npx knex seed:make  fruits 
+
+```
+
+```
+"up": "knex migrate:up",
+"down": "knex migrate:down"
+```
