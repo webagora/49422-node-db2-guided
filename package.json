@@ -5,6 +5,8 @@
   "scripts": {
     "start": "node index.js",
     "server": "nodemon index.js",
+    "up": "knex migrate:up",
+    "down": "knex migrate:down",
     "ketchup": "git fetch && git reset --hard origin/lecture"
   },
   "repository": {
