@@ -1,13 +1,12 @@
-
-exports.seed = function(knex) {
-  // Deletes ALL existing entries
-  return knex('table_name').del()
+// 1- truncate, not delete (there are libraries to help truncating)
+// 2- do NOT try to insert the primary key col
+exports.seed = function (knex) {
+  return knex('fruits').truncate()
     .then(function () {
-      // Inserts seed entries
-      return knex('table_name').insert([
-        {id: 1, colName: 'rowValue1'},
-        {id: 2, colName: 'rowValue2'},
-        {id: 3, colName: 'rowValue3'}
+      return knex('fruits').insert([
+        { name: 'orange', avgWeightOz: 1.5, delicious: true, color: 'green' },
+        { name: 'pear', avgWeightOz: 2.5, delicious: null, color: 'orange' },
+        { name: 'grapes', avgWeightOz: 5, delicious: false, color: 'purple' },
       ]);
     });
 };
