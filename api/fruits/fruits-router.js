@@ -31,7 +31,7 @@ router.post('/', (req, res) => {
       res.status(201).json(newFruitEntry);
     })
     .catch(err => {
-      res.status(500).json({ message: 'Failed to create fruit' });
+      res.status(500).json({ message: err.message });
     });
 });
 
