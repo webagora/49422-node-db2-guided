@@ -1,6 +1,7 @@
-const knex = require('knex')
 const db = require('../../data/db-config')
 
+// NOT NEEDED AS WE ARE USING db-config.js
+// const knex = require('knex')
 // const db = knex({
 //   client: 'sqlite3',
 //   connection: {
