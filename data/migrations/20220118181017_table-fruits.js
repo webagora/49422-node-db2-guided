@@ -1,8 +1,8 @@
 
-exports.up = function(knex) {
-  
+exports.up = async function(knex) {
+  // build fruits table
 };
 
-exports.down = function(knex) {
-  
+exports.down = async function(knex) {
+  // destroy fruits table
 };
