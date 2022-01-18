@@ -6,7 +6,12 @@ module.exports = {
       filename: './data/produce.db3',
     },
     useNullAsDefault: null,
-    
+    migrations: {
+      directory: './data/migrations'
+    },
+    seeds: {
+
+    }
   },
 
   staging: {
