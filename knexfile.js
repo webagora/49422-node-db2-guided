@@ -15,11 +15,11 @@ module.exports = {
   },
 
   staging: {
-    
+
   },
 
   production: {
-    
-  }
+
+  },
 
 };
