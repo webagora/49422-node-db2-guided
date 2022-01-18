@@ -1,4 +1,5 @@
-
+// 1- truncate, not delete (there are libraries to help truncating)
+// 2-
 exports.seed = function (knex) {
   return knex('fruits').truncate()
     .then(function () {
