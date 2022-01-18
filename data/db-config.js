@@ -1,4 +1,4 @@
-const knex = require('./knex')
+const knex = require('knex') // oopsie
 
 const configs = require('../knexfile')
 
